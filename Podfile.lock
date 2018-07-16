@@ -1,0 +1,21 @@
+PODS:
+  - AudioKit (4.3):
+    - AudioKit/UI (= 4.3)
+  - AudioKit/UI (4.3)
+  - Crashlytics (3.10.2):
+    - Fabric (~> 1.7.7)
+  - Fabric (1.7.7)
+
+DEPENDENCIES:
+  - AudioKit
+  - Crashlytics
+  - Fabric
+
+SPEC CHECKSUMS:
+  AudioKit: 95bd2427c1afa7954d71b0c6195a09b87b7448bc
+  Crashlytics: 0360624eea1c978a743feddb2fb1ef8b37fb7a0d
+  Fabric: bda89e242bce1b7b8ab264248cf3407774ce0095
+
+PODFILE CHECKSUM: 08220db166baa63f0cc5278a3b6c65ffcca323fe
+
+COCOAPODS: 1.4.0
