@@ -59,6 +59,19 @@
                                     <action selector="stopClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ao6-PB-Yiv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktD-m5-h2v">
+                                <rect key="frame" x="12" y="284" width="137" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="SHARE EXPORTED">
+                                    <color key="titleColor" red="0.92941176469999998" green="0.74901960779999999" blue="0.36470588240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="exportClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rWf-Ig-GUV"/>
+                                    <action selector="shareExportedClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9s8-W1-2UB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

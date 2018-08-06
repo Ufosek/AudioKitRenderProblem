@@ -11,6 +11,7 @@
 		851527C220FD344D00DF993B /* Born-to-Roll-clip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 851527C120FD344C00DF993B /* Born-to-Roll-clip.mp3 */; };
 		851527C420FD360F00DF993B /* Born-to-Roll-clip.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 851527C320FD360F00DF993B /* Born-to-Roll-clip.m4a */; };
 		853A6DF520ED155C001A98FF /* sample.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 853A6DF420ED155C001A98FF /* sample.m4a */; };
+		856B5DBE2118CEC700B366A1 /* exported.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 856B5DBD2118CEC700B366A1 /* exported.m4a */; };
 		85D7A91420E179720090F476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D7A91320E179720090F476 /* AppDelegate.swift */; };
 		85D7A91620E179720090F476 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D7A91520E179720090F476 /* ViewController.swift */; };
 		85D7A91920E179720090F476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D7A91720E179720090F476 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		851527C120FD344C00DF993B /* Born-to-Roll-clip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Born-to-Roll-clip.mp3"; sourceTree = "<group>"; };
 		851527C320FD360F00DF993B /* Born-to-Roll-clip.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Born-to-Roll-clip.m4a"; sourceTree = "<group>"; };
 		853A6DF420ED155C001A98FF /* sample.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.m4a; sourceTree = "<group>"; };
+		856B5DBD2118CEC700B366A1 /* exported.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = exported.m4a; sourceTree = "<group>"; };
 		85D7A91020E179720090F476 /* AudioFilters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioFilters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D7A91320E179720090F476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85D7A91520E179720090F476 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		85D7A91220E179720090F476 /* AudioFilters */ = {
 			isa = PBXGroup;
 			children = (
+				856B5DBD2118CEC700B366A1 /* exported.m4a */,
 				851527C320FD360F00DF993B /* Born-to-Roll-clip.m4a */,
 				851527C120FD344C00DF993B /* Born-to-Roll-clip.mp3 */,
 				853A6DF420ED155C001A98FF /* sample.m4a */,
@@ -165,6 +168,7 @@
 				851527C220FD344D00DF993B /* Born-to-Roll-clip.mp3 in Resources */,
 				851527C420FD360F00DF993B /* Born-to-Roll-clip.m4a in Resources */,
 				85D7A91E20E179730090F476 /* LaunchScreen.storyboard in Resources */,
+				856B5DBE2118CEC700B366A1 /* exported.m4a in Resources */,
 				85D7A91B20E179730090F476 /* Assets.xcassets in Resources */,
 				853A6DF520ED155C001A98FF /* sample.m4a in Resources */,
 				85D7A91920E179720090F476 /* Main.storyboard in Resources */,
