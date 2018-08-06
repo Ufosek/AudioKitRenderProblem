@@ -17,6 +17,7 @@ class SongPlayer {
     
     fileprivate var player: AKAudioPlayer!
     fileprivate var mainMixer: AKMixer!
+    fileprivate var reverb: AKReverb!
 
     //
     
@@ -63,7 +64,8 @@ class SongPlayer {
             fatalError("PLAYER URL ERROR")
         }
 
-        mainMixer = AKMixer(player)
+        reverb = AKReverb(player, dryWetMix: 0.9)
+        mainMixer = AKMixer(reverb)
         AudioKit.output = mainMixer
     }
     
