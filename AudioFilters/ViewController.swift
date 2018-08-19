@@ -8,9 +8,8 @@ import AVFoundation
 
 
 class ViewController: UIViewController {
-    
-    @IBOutlet weak var reverbSwitch: UISwitch!
-    
+
+    var player: AVAudioPlayer!
     
     //
     
@@ -19,33 +18,22 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         SongPlayer.setAsPlayRecord()
     }
-
-    @IBAction func exportClicked(_ sender: Any) {
-        if let fileUrl = Bundle.main.path(forResource: "Born-to-Roll-clip", ofType: "m4a") {
-            SongPlayer.instance.export(songUrl: fileUrl)
-        }
-    }
     
-    @IBAction func startExported(_ sender: Any) {
-        SongPlayer.instance.playTest()
-    }
-
-    @IBAction func playSongClicked(_ sender: Any) {
+    @IBAction func renderAndPlayClicked(_ sender: Any) {
         if let fileUrl = Bundle.main.path(forResource: "Born-to-Roll-clip", ofType: "m4a") {
             SongPlayer.instance.setup(songURL: fileUrl)
-            SongPlayer.instance.start()
+        }
+
+        SongPlayer.instance.export {
+            do {
+                self.player = try AVAudioPlayer(contentsOf: SongPlayer.instance.exportURL)
+                self.player.prepareToPlay()
+                self.player.play()
+            } catch {
+                fatalError("PLAYER URL ERROR = \(error)")
+            }
         }
     }
     
-    @IBAction func stopClicked(_ sender: Any) {
-        SongPlayer.instance.stop()
-    }
-    
-    @IBAction func shareExportedClicked(_ sender: Any) {
-        let data = SongPlayer.instance.exportSavedData()
-        
-        let activityVc = UIActivityViewController(activityItems: [data], applicationActivities: [])
-        present(activityVc, animated: true, completion: nil)
-    }
 }
 

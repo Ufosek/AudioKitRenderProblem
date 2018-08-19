@@ -18,58 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXz-9Y-wiw">
-                                <rect key="frame" x="12" y="115" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="EXPORT"/>
-                                <connections>
-                                    <action selector="exportClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6U4-Vu-X5O"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eK0-my-aFP">
-                                <rect key="frame" x="12" y="33" width="87" height="30"/>
+                                <rect key="frame" x="16" y="42" width="140" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="PLAY SONG"/>
+                                <state key="normal" title="RENDER AND PLAY"/>
                                 <connections>
-                                    <action selector="playSongClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qUl-Xa-uak"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="au4-gQ-iXo">
-                                <rect key="frame" x="12" y="200" width="124" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <color key="tintColor" red="0.0" green="0.75294117650000003" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="PLAY EXPORTED"/>
-                                <connections>
-                                    <action selector="startExported:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KCg-3I-oi6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TnC-i2-iQn">
-                                <rect key="frame" x="159" y="33" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="STOP">
-                                    <color key="titleColor" red="0.96078437569999997" green="0.49803924560000001" blue="0.49803918600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="playSongClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w2r-jD-zJg"/>
-                                    <action selector="stopClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ao6-PB-Yiv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktD-m5-h2v">
-                                <rect key="frame" x="12" y="284" width="137" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="SHARE EXPORTED">
-                                    <color key="titleColor" red="0.92941176469999998" green="0.74901960779999999" blue="0.36470588240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="exportClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rWf-Ig-GUV"/>
-                                    <action selector="shareExportedClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9s8-W1-2UB"/>
+                                    <action selector="renderAndPlayClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rlc-5i-7QF"/>
                                 </connections>
                             </button>
                         </subviews>
